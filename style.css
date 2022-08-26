@@ -1,0 +1,174 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block; 
+}
+
+h1{
+  font-size: 38px;
+  color:darkgray;
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  overflow-y: hidden;
+  z-index:-1;
+  height: auto;
+  position: absolute;
+  bottom: 0%;
+  opacity: 0.2;
+}
+
+/* SLIDER */
+
+.slidecontainer {
+  width: 8%; /* Width of the outside container */
+  top: 100px;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  position: absolute;
+  width: 8%; /* Full-width */
+  top:22px;
+  height: 10px; /* Specified height */
+  background: rgb(46, 49, 52); /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  right: 40px;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 13px; /* Set a specific slider handle width */
+  height: 13px; /* Slider handle height */
+  background: rgb(86, 131, 189); 
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: rgb(86, 131, 189); 
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* TOP BUTTONs */
+
+.fa-solid fa-bars {
+  padding-top: 50px;
+  cursor: pointer;
+}
+
+i {
+  position: relative;
+  left: 10px;
+}
+
+.warp {
+  color:rgb(86, 131, 189);
+  font-size: medium;
+  position: absolute;
+  right: 180px;
+}
+
+.warpValue {
+  color:rgb(86, 131, 189);
+  position: absolute;
+  right: 10px;
+  font-weight: bold;
+}
+
+#warpButton {
+  color:rgb(86, 131, 189);
+  
+}
+
+/* MENU */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(86, 131, 189);
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color:rgb(189, 207, 225)}
+
+.dropdown:hover .dropdown-content {
+  /* background-color: #3e8e41; */
+  display: block;
+}
+
+/* MODAL */
+
+.modal {
+  display: none; /* Hidden by default */
+  z-index: 1;
+  width: 200px;
+  margin: auto;
+  height: 20%; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
